@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Astral by HTML5 UP</title>
+		<title>Rina Fumoto</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,9 +20,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#programming" class="icon solid fa-code"><span>Programming</span></a>
+						<a href="#graphics" class="icon solid fa-image"><span>Graphics</span></a>
+						<a href="#other" class="icon solid fa-heart"><span>Other</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -31,62 +32,57 @@
 						<!-- Me -->
 							<article id="home" class="panel intro">
 								<header>
-									<h1>Jane Doe</h1>
-									<p>Senior Astral Projectionist</p>
+									<h1>Rina Fumoto</h1>
+									<p>MSc Computer Animation and Visual Effects</p>
 								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+								<a href="#programming" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"></span>
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
 
-						<!-- Work -->
-							<article id="work" class="panel">
+						<!-- Programming -->
+							<article id="programming" class="panel">
 								<header>
-									<h2>Work</h2>
+									<h2>Programming Projects</h2>
 								</header>
-								<p>
+								<!-- <p>
 									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
 									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
 									luctus elit eget interdum.
-								</p>
+								</p> -->
 								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+									<div class="grid">
+										<div class="grid-sizer"></div>
+										<div class="grid-item grid-item--width2">
+											<a href="#" class="image fit"><img src="images/programming/fluid.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
+										<div class="grid-item grid-item--width2">
 											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
+										<div class="grid-item grid-item--width2">
 											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+										<div class="grid-item">
+											<a href="#" class="image fit"><img src="images/programming/ar.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+										<div class="grid-item">
+											<a href="#" class="image fit"><img src="images/programming/ecg.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+										<div class="grid-item">
+											<a href="#" class="image fit"><img src="images/programming/nlp.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+										<div class="grid-item grid-item--width2">
+											<a href="#" class="image fit"><img src="images/programming/mpn.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+										<div class="grid-item">
+											<a href="#" class="image fit"><img src="images/programming/nsga-2.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+										<div class="grid-item">
+											<a href="#" class="image fit"><img src="images/programming/androidmap.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										<div class="grid-item grid-item--width2">
+											<a href="#" class="image fit"><img src="images/programming/sss.png" alt=""></a>
 										</div>
 									</div>
 								</section>
@@ -137,6 +133,34 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/masonry.pkgd.min.js"></script>
+			<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+			<script>
+				// var $grid = $('.grid').masonry({
+				// 	// set itemSelector so .grid-sizer is not used in layout
+				// 	itemSelector: '.grid-item',
+				// 	// use element for option
+				// 	columnWidth: '.grid-sizer',
+				// 	percentPosition: true
+				// })
+				// // layout Masonry after each image loads
+				// $grid.imagesLoaded().progress( function() {
+				// 	$grid.masonry('layout');
+				// });
 
+				
+				var $grid = $('.grid').imagesLoaded( function() {
+					// init Masonry after all images have loaded
+					$grid.masonry({
+						// set itemSelector so .grid-sizer is not used in layout
+						itemSelector: '.grid-item',
+						// use element for option
+						columnWidth: '.grid-sizer',
+						percentPosition: true
+					});
+				});
+
+				// $('.inactive').hide();
+			</script>
 	</body>
 </html>

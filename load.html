@@ -1,0 +1,52 @@
+<section id="load">
+
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item grid-item--width2">
+            <a href="#" class="image fit"><img src="images/programming/fluid.png" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/programming/ar.png" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/programming/ecg.png" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/programming/nlp.png" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/programming/mpn.png" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/programming/nsga-2.png" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/programming/androidmap.png" alt=""></a>
+        </div>
+        <div class="grid-item">
+            <a href="#" class="image fit"><img src="images/programming/sss.png" alt=""></a>
+        </div>
+    </div>
+</section>
+<script>
+    var $grid = $('.grid').imagesLoaded( function() {
+        // init Masonry after all images have loaded
+        $grid.masonry({
+            // set itemSelector so .grid-sizer is not used in layout
+            itemSelector: '.grid-item',
+            // use element for option
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
+    });
+
+    $('a[href$="#programming"').click(function() {
+        $('#programming').load('/index.html #programming');
+    });
+</script>

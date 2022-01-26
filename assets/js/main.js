@@ -76,8 +76,8 @@
 
 				// Deactivate all panels except this one.
 					$panels.not($panel)
-						.addClass('inactive')
-						.hide();
+						.addClass('inactive');
+						// .hide();
 
 				// Activate link.
 					$link
@@ -85,6 +85,43 @@
 
 				// Reset scroll.
 					$window.scrollTop(0);
+
+					setTimeout(function() {
+
+						// Hide all panels.
+							$panels.hide();
+
+						// Show target panel.
+							$panel.show();
+
+						// Set new max/min height.
+							$main
+								.css('max-height', $panel.outerHeight() + 'px')
+								.css('min-height', $panel.outerHeight() + 'px');
+
+						// Reset scroll.
+							$window.scrollTop(0);
+
+						// Delay.
+							window.setTimeout(function() {
+
+								// Activate target panel.
+									$panel.removeClass('inactive');
+
+								// Clear max/min height.
+									$main
+										.css('max-height', '')
+										.css('min-height', '');
+
+								// IE: Refresh.
+									$window.triggerHandler('--refresh');
+
+								// Unlock.
+									locked = false;
+
+							}, (breakpoints.active('small') ? 0 : 500));
+
+					}, 250);
 
 			})();
 
