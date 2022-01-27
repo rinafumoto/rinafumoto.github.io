@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -65,16 +66,16 @@
 										</div>
 										<div class="grid-item grid-item--width2">
 											<span class="image">
-												<img src="images/pic02.jpg" alt="" />
+												<img src="images/programming/plates.png" alt="" />
 											</span>
 											<a href="#">
-												<h3>Impossible Staircase</h3>
-												<h4>| Maya |</h4>
+												<h3>Crockery Generator</h3>
+												<h4>| Maya | MEL |</h4>
 											</a>
 										</div>
 										<div class="grid-item grid-item--width2">
 											<span class="image">
-												<img src="images/pic03.jpg" alt="" />
+												<img src="images/programming/hda.png" alt="" />
 											</span>
 											<a href="#">
 												<h3>City Generator</h3>
@@ -162,7 +163,7 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<form action="mailto:rina.fumoto@icloud.com" method="post">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
@@ -189,8 +190,15 @@
 
 				<!-- Footer -->
 					<div id="footer">
+						<div id="links">
+							<a href="https://linkedin.com/in/rina-fumoto-068318153" class="fab fa-linkedin"></a>
+							<a href="https://github.com/rf1112" class="fab fa-github"></a>
+							<a href="tel:+447745526084" class="icon solid fa-phone"></a>
+							<a href="mailto:rina.fumoto@icloud.com" class="icon solid fa-envelope"></a>
+							<!-- <a href="#" class="fab fa-instagram"></a> -->
+						</div>
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; 2022 Rina Fumoto</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
@@ -204,20 +212,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/masonry.pkgd.min.js"></script>
 			<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-			<script>
-				// var $grid = $('.grid').masonry({
-				// 	// set itemSelector so .grid-sizer is not used in layout
-				// 	itemSelector: '.grid-item',
-				// 	// use element for option
-				// 	columnWidth: '.grid-sizer',
-				// 	percentPosition: true
-				// })
-				// // layout Masonry after each image loads
-				// $grid.imagesLoaded().progress( function() {
-				// 	$grid.masonry('layout');
-				// });
-
-				
+			<script>				
 				var $grid = $('.grid').imagesLoaded( function() {
 					// init Masonry after all images have loaded
 					$grid.masonry({
@@ -229,7 +224,6 @@
 					});
 				});
 
-				// $('.inactive').hide();
 			</script>
 	</body>
 </html>
