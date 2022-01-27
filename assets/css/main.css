@@ -1532,7 +1532,7 @@ input, select, textarea {
 		}
 
 	header {
-		margin: 0 0 1.5em 0;
+		margin: 0 1em 1.5em 1em;
 	}
 
 		header > p {
@@ -2271,7 +2271,7 @@ input, select, textarea {
 
 		.grid-item:hover > .image:before {
 			background-color: #333333;
-			opacity: 0.35;
+			opacity: 0.15;
 		}
 
 		.grid-item > a {
@@ -2309,25 +2309,15 @@ input, select, textarea {
 			z-index: 3;
 		}
 
-		.grid-item > a h3 {
+		.grid-item > a h3, .grid-item > a h4 {
 			color: #ffffff;
+			font-size: 14px;
+			line-height: 20px;
+    		margin: 5px;
+		}
+
+		.grid-item > a h3 {
+			letter-spacing: 3px;
 			font-size: 16px;
-			line-height: 24px;
-		}
-
-		.grid-item > a .content {
-			-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-			-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
-			transition: max-height 0.5s ease, opacity 0.5s ease;
-			width: 100%;
-			max-height: 0;
-			line-height: 1.5;
-			margin-top: 0.35em;
-			opacity: 0;
-		}
-
-		.grid-item:hover > a .content {
-			max-height: 15em;
-			opacity: 1;
+			font-weight: 600;
 		}
