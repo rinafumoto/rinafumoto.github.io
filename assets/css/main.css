@@ -2014,7 +2014,7 @@ input, select, textarea {
 					-webkit-flex-shrink: 0;
 					-ms-flex-shrink: 0;
 					flex-shrink: 0;
-					width: 15em;
+					width: 13em;
 					height: 100%;
 				}
 
@@ -2094,14 +2094,12 @@ input, select, textarea {
 				}
 
 					#main > .panel.intro header h1 {
-						line-height: 1.25em;
+						line-height: 1.5em;
 						margin-bottom: 0;
 					}
 
 					#main > .panel.intro header p {
-						letter-spacing: -0.015em;
-						font-size: 1.25em;
-						margin: 0.25em 0 0 0;
+						line-height: 24px;
 					}
 
 				@media screen and (max-width: 980px) {

@@ -26,7 +26,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			}, 300);
 		});
 
 	// Nav.
@@ -121,7 +121,7 @@
 
 							}, (breakpoints.active('small') ? 0 : 500));
 
-					}, 250);
+					}, 500);
 
 			})();
 
