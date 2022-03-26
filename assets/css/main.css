@@ -1606,6 +1606,7 @@ input, select, textarea {
 		cursor: pointer;
 		outline: 0;
 		padding: 0.7em 1.5em 0.7em 1.5em;
+		text-decoration: none;
 	}
 
 		input[type="button"]:hover,
@@ -2191,6 +2192,8 @@ input, select, textarea {
 		}
 
 
+/* MY STUFF */
+
 		.grid-sizer, .grid-item {
 			width: 25%;
 			/* float: left; */
@@ -2375,19 +2378,24 @@ input, select, textarea {
 			left: 50%;
 			transform: translate(-50%, -50%);
 			background-color: white;
-			padding: 1rem 1.5rem;
+			padding: 3.5em;
 			width: 45em;
 			border-radius: 0.5rem;
 		  }
 		  
 		  .close-button {
+			position: absolute;
+			top: 0;
+			right: 0;
 			float: right;
-			width: 1.5rem;
-			line-height: 1.5rem;
+			width: 2rem;
+			line-height: 2rem;
 			text-align: center;
 			cursor: pointer;
 			border-radius: 0.25rem;
 			background-color: lightgray;
+			transform: translate(-1.5rem, 1.5rem);
+			font-size: 34px;
 		  }
 		  
 		  .close-button:hover {
@@ -2405,4 +2413,40 @@ input, select, textarea {
 			transform: scale(1.0);
 			/* transition: visivility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; */
 		  }
+
+		  .modal-content h2 {
+			  display: inline-block;
+		  }
+
+		  .modal-content h3 {
+			  float: right;
+		  }
+
+		  .video {
+			  width: 100%;
+			  text-align: center;
+			  margin: 2rem 0;
+		  }
+
+		  video {
+			  width: 100%;
+		  }
+
+		  /* .github {
+			  line-height: 0;
+		  }
+
+		  .github img {
+			  height: 24px;
+		  } */
+
+		  .modal-content p {
+			  text-align: center;
+			  margin-bottom: 2rem;
+		  }
+
+		  .modal-content .button {
+			  font-weight: 400;
+		  }
+
 
