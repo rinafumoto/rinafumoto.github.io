@@ -239,7 +239,7 @@
 										<h2>Diffusion Limited Aggregation</h2>
 										<h3>| C++ |</h3>
 										<div class="video">
-											<img src="images/technical/dla2.jpg" width=400 alt="dla" />
+											<img src="images/technical/dla2.jpg" alt="dla" />
 										</div>
 										<p>Diffusion Limited Aggregation in C++ extended from lab exercise at University.</p>
 										<p>
@@ -335,7 +335,7 @@
 										<h2>Android Map App</h2>
 										<h3>| Java | Android Studio |</h3>
 										<div class="video">
-											<img src="images/technical/androidmap.png" width=400 alt="s3" />
+											<img src="images/technical/androidmap.png" alt="s3" />
 										</div>
 										<p>Android app which let users to save destinations and get distances between the current location and the destinations. It is implemented in Java with Android Studio.</p>
 										<p>
@@ -415,15 +415,18 @@
 
 				$('.grid-item > a').click(function() {
 					$("#" + $(this).attr("id") +"Modal").toggleClass("show-modal");
+					$('body').toggleClass("modal-open");
 				});
 
 				$('.close-button').click(function() {
 					$("#" + $(this).parents('.bg').attr('id')).toggleClass("show-modal");
+					$('body').toggleClass("modal-open");
 				});
 
 				$(window).click(function(event) {
 					if ($(event.target).hasClass("modal")) {
 						$("#" + event.target.parentNode.id).toggleClass("show-modal");
+						$('body').toggleClass("modal-open");
 					}
 				});
 

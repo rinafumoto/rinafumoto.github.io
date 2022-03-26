@@ -2369,18 +2369,18 @@ input, select, textarea {
 			visibility: hidden;
 			transform: scale(0);
 			transition: visibility 0.5s, opacity 0.5s, transform 0.5s;
+			overflow-y: auto;
 		  }
 		  
 		  /* Modal Content */
 		  .modal-content {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			position: relative;
+			margin: 2.5em auto;
+			transform: translateX(10px);
 			background-color: white;
 			padding: 3.5em;
-			width: 45em;
-			border-radius: 0.5rem;
+			width: 35em;
+			border-radius: 2.5rem;
 		  }
 		  
 		  .close-button {
@@ -2432,6 +2432,11 @@ input, select, textarea {
 			  width: 100%;
 		  }
 
+		  .video img {
+			  height: 250px;
+			  max-width: 100%;
+		  }
+
 		  /* .github {
 			  line-height: 0;
 		  }
@@ -2442,7 +2447,7 @@ input, select, textarea {
 
 		  .modal-content p {
 			  text-align: center;
-			  margin-bottom: 2rem;
+			  margin-bottom: 1rem;
 		  }
 
 		  .modal-content .button {
@@ -2450,7 +2455,7 @@ input, select, textarea {
 		  }
 
 		  .year {
-			  text-align: right;
+			  float: right;
 		  }
 
 		  .grid-item .year {
@@ -2460,4 +2465,7 @@ input, select, textarea {
 			font-size: 14px;
 		  }
 
+		  body.modal-open {
+			  overflow: hidden;
+		  }
 
