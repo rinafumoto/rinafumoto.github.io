@@ -2449,4 +2449,15 @@ input, select, textarea {
 			  font-weight: 400;
 		  }
 
+		  .year {
+			  text-align: right;
+		  }
+
+		  .grid-item .year {
+			position: absolute;
+			right: 2rem;
+			bottom: 1rem;
+			font-size: 14px;
+		  }
+
 
