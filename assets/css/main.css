@@ -1989,7 +1989,7 @@ input, select, textarea {
 
 			#main > .panel.intro {
 				padding: 0;
-				height: 20em;
+				/* height: 20em; */
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -2049,7 +2049,7 @@ input, select, textarea {
 						object-position: center;
 					}
 
-					#main > .panel.intro .pic .arrow {
+					#main > .panel.intro .arrow {
 						display: block;
 						position: absolute;
 						right: 0;
@@ -2069,12 +2069,12 @@ input, select, textarea {
 						transition: width .15s ease-in-out, padding-right .15s ease-in-out;
 					}
 
-						#main > .panel.intro .pic .arrow:before {
+						#main > .panel.intro .arrow:before {
 							position: relative;
 							padding-right: 0;
 						}
 
-					#main > .panel.intro .pic:hover .arrow {
+					#main > .panel.intro .arrow:hover {
 						width: 2.5em;
 						padding-right: 0.25em;
 						background: rgba(0, 0, 0, 0.50);
@@ -2096,11 +2096,14 @@ input, select, textarea {
 
 					#main > .panel.intro header h1 {
 						line-height: 1.5em;
-						margin-bottom: 0;
+						margin-bottom: 10px;
 					}
 
 					#main > .panel.intro header p {
-						line-height: 24px;
+						line-height: 28px;
+						/* margin: 2em 0 0 0; */
+						width: 70%;
+						margin-bottom: 0;
 					}
 
 				@media screen and (max-width: 980px) {
@@ -2491,3 +2494,30 @@ input, select, textarea {
 			  overflow: hidden;
 		  }
 
+		  .flex {
+			  display: flex;
+		  }
+
+		  .flex img {
+			  max-width: 250px;
+			  margin: auto;
+			  /* padding: 0 10px; */
+			  width: 30%;
+			  transform: translateX(20px);
+		  }
+
+		  @media screen and (max-width: 980px)  {
+			  .flex {
+				  flex-direction: column-reverse;
+			  }
+
+			  .flex img {
+				  transform: translateX(0);
+				  padding-bottom: 14px;
+				  width: 250px;
+			  }
+
+			  #main > .panel.intro header p {
+				  width: 100%;
+			  }
+		  }

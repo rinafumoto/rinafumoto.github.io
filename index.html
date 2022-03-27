@@ -34,12 +34,15 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Rina Fumoto</h1>
-									<p>Highly self-motivated and enthusiastic MSc Computer Animation and Visual Effects student at Bournemouth University. Graduated from University of Surrey with 1st Class Honours in BSc Computer Science. A good communicator with strong time management and organizing skills from working experiences in fast-paced environments. Interested in Programming, Houdini and simulation and currently looking for a graduate R&D/TD role in VFX industry.</p>
+									<div class="flex">
+										<p>Highly self-motivated and enthusiastic MSc Computer Animation and Visual Effects student at Bournemouth University. Graduated from University of Surrey with 1st Class Honours in BSc Computer Science. A good communicator with strong time management and organizing skills from working experiences in fast-paced environments. Interested in Programming, Houdini and simulation and currently looking for a graduate R&D/TD role in VFX industry.</p>
+										<img src="images/me.jpg" alt="" />	
+									</div>
+									<a href="#technical">
+										<span class="arrow icon solid fa-chevron-right"></span>
+									</a>
 								</header>
-								<a href="#technical" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
+
 							</article>
 
 						<!-- Technical -->
@@ -483,16 +486,6 @@
 			<script src="assets/js/masonry.pkgd.min.js"></script>
 			<script src="assets/js/imagesloaded.pkgd.min.js"></script>
 			<script>				
-				var $grid = $('.grid').imagesLoaded( function() {
-					// init Masonry after all images have loaded
-					$grid.masonry({
-						// set itemSelector so .grid-sizer is not used in layout
-						itemSelector: '.grid-item',
-						// use element for option
-						columnWidth: '.grid-sizer',
-						percentPosition: true
-					});
-				});
 
 				$('.grid-item > a').click(function() {
 					$("#" + $(this).attr("id") +"Modal").toggleClass("show-modal");

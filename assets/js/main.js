@@ -25,8 +25,20 @@
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
+				
+				var $grid = $('.grid').imagesLoaded( function() {
+					// init Masonry after all images have loaded
+					$grid.masonry({
+						// set itemSelector so .grid-sizer is not used in layout
+						itemSelector: '.grid-item',
+						// use element for option
+						columnWidth: '.grid-sizer',
+						percentPosition: true
+					});
+				});
+				
 				$body.removeClass('is-preload');
-			}, 300);
+			}, 100);
 		});
 
 	// Nav.
@@ -76,8 +88,8 @@
 
 				// Deactivate all panels except this one.
 					$panels.not($panel)
-						.addClass('inactive');
-						// .hide();
+						.addClass('inactive')
+						.hide();
 
 				// Activate link.
 					$link
@@ -85,43 +97,6 @@
 
 				// Reset scroll.
 					$window.scrollTop(0);
-
-					setTimeout(function() {
-
-						// Hide all panels.
-							$panels.hide();
-
-						// Show target panel.
-							$panel.show();
-
-						// Set new max/min height.
-							$main
-								.css('max-height', $panel.outerHeight() + 'px')
-								.css('min-height', $panel.outerHeight() + 'px');
-
-						// Reset scroll.
-							$window.scrollTop(0);
-
-						// Delay.
-							window.setTimeout(function() {
-
-								// Activate target panel.
-									$panel.removeClass('inactive');
-
-								// Clear max/min height.
-									$main
-										.css('max-height', '')
-										.css('min-height', '');
-
-								// IE: Refresh.
-									$window.triggerHandler('--refresh');
-
-								// Unlock.
-									locked = false;
-
-							}, (breakpoints.active('small') ? 0 : 500));
-
-					}, 500);
 
 			})();
 
@@ -197,10 +172,21 @@
 
 								// Unlock.
 									locked = false;
+								var $grid = $('.grid').imagesLoaded( function() {
+									// init Masonry after all images have loaded
+									$grid.masonry({
+										// set itemSelector so .grid-sizer is not used in layout
+										itemSelector: '.grid-item',
+										// use element for option
+										columnWidth: '.grid-sizer',
+										percentPosition: true
+									});
+								});
+							}, (breakpoints.active('small') ? 0 : 200));
+							
 
-							}, (breakpoints.active('small') ? 0 : 500));
-
-					}, 500);
+				
+					}, 250);
 
 			});
 
@@ -246,4 +232,4 @@
 
 		}
 
-})(jQuery);
+})(jQuery); 
