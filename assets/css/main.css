@@ -2401,7 +2401,6 @@ input, select, textarea {
 		  .modal-content {
 			position: relative;
 			margin: 2.5em auto;
-			transform: translateX(10px);
 			background-color: white;
 			padding: 3.5em;
 			width: 35em;

@@ -180,7 +180,7 @@
 										<h2>Fluid Simulation</h2>
 										<h3>| C++ | Qt | OpenGL |</h3>
 										<div class="video">
-											<video controls>
+											<video controls loop>
 												<source src="videos/technical/Fluid.mp4" type="video/mp4">
 												Your browser does not support the video tag.
 											</video>
@@ -202,7 +202,7 @@
 										<h2>Crockery Generator</h2>
 										<h3>| Maya | MEL |</h3>
 										<div class="video">
-											<video controls>
+											<video controls loop>
 												<source src="videos/technical/CrockeryGenerator.mp4" type="video/mp4">
 												Your browser does not support the video tag.
 											</video>
@@ -222,7 +222,7 @@
 										<h2>City Generator</h2>
 										<h3>| Houdini | HDA | VEX |</h3>
 										<div class="video">
-											<video controls>
+											<video controls loop>
 												<source src="videos/technical/HDA.mp4" type="video/mp4">
 												Your browser does not support the video tag.
 											</video>
@@ -259,7 +259,7 @@
 										<h2>AR Indoor Navigation</h2>
 										<h3>| Unity | C# |</h3>
 										<div class="video">
-											<video controls>
+											<video controls loop>
 												<source src="videos/technical/ARNavigation.mp4" type="video/mp4">
 												Your browser does not support the video tag.
 											</video>
@@ -349,7 +349,7 @@
 								</div>
 							</div>
 
-						<!-- Technical -->							
+						<!-- Graphics -->							
 							<article id="graphics" class="panel">
 								<header>
 									<h2>Graphics Projects</h2>
@@ -427,7 +427,105 @@
 							</article>
 
 							<!-- Modals -->
-
+							<div id="staircaseModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>Impossible Egg Staircase</h2>
+										<h3>| Maya |</h3>
+										<div class="video">
+											<video controls loop>
+												<source src="videos/graphics/staircase.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+										</div>
+										<p>Hand animated egg yolk rolling down the egg white that forms an impossible staircase.</p>
+										<p>
+											<a href="other/StaircaseDocument.pdf" class="button">Production Document</a>
+										</p>
+										<div class="year">2022</div>
+									</div>
+								</div>
+							</div>
+							<div id="cupcakesModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>Cupcakes</h2>
+										<h3>| Houdini |</h3>
+										<div class="video">
+											<img src="images/graphics/cupcake.png" alt="s3" />
+										</div>
+										<p>Learning a procedural modelling technique, VDB and Solaris LOPs by creating a box of cupcakes. This was done by following the "CUPCAKE PROJECT | MODELING AND LOOKDEV" tutorial on SideFX website.</p>
+										<div class="year">2021</div>
+									</div>
+								</div>
+							</div>
+							<div id="rbdnfluidModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>RBD and Fluid Dynamics</h2>
+										<h3>| Houdini |</h3>
+										<div class="video">
+											<video controls loop>
+												<source src="videos/graphics/dynamicProject.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+										</div>
+										<p>Learning the Houdini dynamics by following the tutorial called "Houdini Isn't Scary Project" on SideFX website.</p>
+										<div class="year">2021</div>
+									</div>
+								</div>
+							</div>
+							<div id="donutModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>Donut</h2>
+										<h3>| Houdini |</h3>
+										<div class="video">
+											<img src="images/graphics/donut.jpg" alt="donut" />
+										</div>
+										<p>Learning the basics of Houdini by creating a donut. This was done by following "Houdini Isn't Scary" tutorial on SideFX website.</p>
+										<div class="year">2021</div>
+									</div>
+								</div>
+							</div>
+							<div id="rocketModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>Rocket</h2>
+										<h3>| Maya |</h3>
+										<div class="video">
+											<video controls loop>
+												<source src="videos/graphics/Rocket.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+										</div>
+										<p>My first Maya project done by following the "Intro to Maya" tutorial on the AREA website.</p>
+										<div class="year">2021</div>
+									</div>
+								</div>
+							</div>
+							<div id="brickModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>Brick Wall Simulation</h2>
+										<h3>| Houdini |</h3>
+										<div class="video">
+											<video controls loop>
+												<source src="videos/graphics/BWG.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+										</div>
+										<p>My first Houdini project.<br/>I joined the workshop "Digital Assets in Houdini: Node by Node to Destruction" at View Conference 2020.</p>
+										<div class="year">2020</div>
+									</div>
+								</div>
+							</div>
 
 
 						<!-- Contact -->
@@ -490,17 +588,21 @@
 				$('.grid-item > a').click(function() {
 					$("#" + $(this).attr("id") +"Modal").toggleClass("show-modal");
 					$('body').toggleClass("modal-open");
+					// console.log("#"+ + $(this).attr("id") +"Modal video");
+					$("#" + $(this).attr("id") +"Modal video")[0].play();
 				});
 
 				$('.close-button').click(function() {
 					$("#" + $(this).parents('.bg').attr('id')).toggleClass("show-modal");
 					$('body').toggleClass("modal-open");
+					$("#" + $(this).parents('.bg').attr('id') +" video")[0].pause();
 				});
 
 				$(window).click(function(event) {
 					if ($(event.target).hasClass("modal")) {
 						$("#" + event.target.parentNode.id).toggleClass("show-modal");
 						$('body').toggleClass("modal-open");
+						$("#" + event.target.parentNode.id +" video")[0].pause();
 					}
 				});
 
