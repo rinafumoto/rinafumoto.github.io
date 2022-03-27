@@ -147,11 +147,17 @@
 
 						// Show target panel.
 							$panel.show();
-
-						// Set new max/min height.
-							$main
-								.css('max-height', $panel.outerHeight() + 'px')
-								.css('min-height', $panel.outerHeight() + 'px');
+							
+							var $grid = $('.grid').imagesLoaded( function() {
+								// init Masonry after all images have loaded
+								$grid.masonry({
+									// set itemSelector so .grid-sizer is not used in layout
+									itemSelector: '.grid-item',
+									// use element for option
+									columnWidth: '.grid-sizer',
+									percentPosition: true
+								});
+							});
 
 						// Reset scroll.
 							$window.scrollTop(0);
@@ -172,20 +178,9 @@
 
 								// Unlock.
 									locked = false;
-								var $grid = $('.grid').imagesLoaded( function() {
-									// init Masonry after all images have loaded
-									$grid.masonry({
-										// set itemSelector so .grid-sizer is not used in layout
-										itemSelector: '.grid-item',
-										// use element for option
-										columnWidth: '.grid-sizer',
-										percentPosition: true
-									});
-								});
-							}, (breakpoints.active('small') ? 0 : 200));
-							
 
-				
+							}, (breakpoints.active('small') ? 0 : 500));
+							
 					}, 250);
 
 			});
