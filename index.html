@@ -24,7 +24,6 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#showreel" class="icon solid fa-film"><span>Showreel</span></a>
 						<a href="#technical" class="icon solid fa-code"><span>Technical</span></a>
 						<a href="#graphics" class="icon solid fa-image"><span>Graphics</span></a>
 						<!-- <a href="#other" class="icon solid fa-heart"><span>Other</span></a> -->
@@ -42,21 +41,11 @@
 										<p>Highly self-motivated and enthusiastic MSc Computer Animation and Visual Effects student at Bournemouth University. Graduated from University of Surrey with 1st Class Honours in BSc Computer Science. A good communicator with strong time management and organizing skills from working experiences in fast-paced environments. Interested in Programming, Houdini and simulation and currently looking for a graduate R&D/TD role in VFX industry.</p>
 										<img src="images/me.webp" alt="" />	
 									</div>
-									<a href="#showreel">
+									<a href="#technical">
 										<span class="arrow icon solid fa-chevron-right"></span>
 									</a>
 								</header>
 
-							</article>
-
-							<!-- Showreel -->
-							<article id="showreel" class="panel">
-								<header>
-									<h2>Showreel</h2>
-								</header>
-								<div class="video">
-									<iframe src="https://player.vimeo.com/video/711314871?h=ccd525aa79&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-								</div>
 							</article>
 
 							<!-- Technical -->
@@ -680,7 +669,6 @@
 			<script src="assets/js/masonry.pkgd.min.js"></script>
 			<script src="assets/js/imagesloaded.pkgd.min.js"></script>
 			<script>
-				showreel = new Vimeo.Player($('#showreel iframe'));
 				mpmIFrame = '<iframe src="https://player.vimeo.com/video/715569815?h=863ff5955f&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
 				appIFrame = '<iframe src="https://player.vimeo.com/video/715574596?h=4046556c51&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
 				renderIFrame = '<iframe src="https://player.vimeo.com/video/715569293?h=e410ffeb02&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
@@ -725,14 +713,6 @@
 						}
 					}
 				});
-
-				$(window).on('hashchange', function() {
-					if (location.hash == '#showreel') {
-						showreel.play();
-					} else {
-						showreel.pause();
-					}
-				})
 
 			</script>
 	</body>
