@@ -2511,6 +2511,13 @@ input, select, textarea {
 			  transform: translateX(20px);
 		  }
 
+		  header .button {
+			padding: 4px 14px;
+			float: right;
+			letter-spacing: 2px;
+			margin: 10px;
+		  }
+
 		  @media screen and (max-width: 980px)  {
 			  .flex {
 				  flex-direction: column-reverse;
@@ -2525,7 +2532,12 @@ input, select, textarea {
 			  #main > .panel.intro header p {
 				  width: 100%;
 			  }
+
+			  header .button {
+					float: none;
+			  }
 		  }
+
 
 /* Loading Spinner */
 		  .lds-spinner,
