@@ -38,6 +38,7 @@
 				});
 				
 				$body.removeClass('is-preload');
+				$('.lds-spinner').hide();
 			}, 100);
 		});
 
