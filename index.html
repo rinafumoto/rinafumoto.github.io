@@ -49,13 +49,13 @@
 
 							</article>
 
-							<!-- Showreel-->
+							<!-- Showreel -->
 							<article id="showreel" class="panel">
 								<header>
 									<h2>Showreel</h2>
 								</header>
 								<div class="video">
-									<iframe src="https://player.vimeo.com/video/711314871?h=ccd525aa79&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+									<iframe src="https://player.vimeo.com/video/711314871?h=ccd525aa79&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</article>
 
@@ -72,6 +72,26 @@
 										<div class="grid-sizer"></div>
 										<div class="grid-item grid-item--width2">
 											<span class="image">
+												<img src="images/technical/mpm.webp" alt="" />
+											</span>
+											<a id="mpm">
+												<h3>Deformation Simulation</h3>
+												<h4>| C++ | Qt | NGL | GLSL |</h4>
+												<div class="year">2022</div>
+											</a>
+										</div>
+										<div class="grid-item grid-item--width2">
+											<span class="image">
+												<img src="images/technical/applauncher.webp" alt="" />
+											</span>
+											<a id="app">
+												<h3>App Launcher</h3>
+												<h4>| Python | Qt | Bash |</h4>
+												<div class="year">2022</div>
+											</a>
+										</div>
+										<div class="grid-item grid-item--width2">
+											<span class="image">
 												<img src="images/technical/render.webp" alt="" />
 											</span>
 											<a id="render">
@@ -82,11 +102,21 @@
 										</div>
 										<div class="grid-item grid-item--width2">
 											<span class="image">
+												<img src="images/technical/slug.webp" alt="" />
+											</span>
+											<a id="slug">
+												<h3>Slug Game</h3>
+												<h4>| Unreal Engine | Blueprints |</h4>
+												<div class="year">2022</div>
+											</a>
+										</div>
+										<div class="grid-item grid-item--width2">
+											<span class="image">
 												<img src="images/technical/fluid.webp" alt="" />
 											</span>
 											<a id="fluid">
 												<h3>Fluid Simulation</h3>
-												<h4>| C++ | Qt | OpenGL |</h4>
+												<h4>| C++ | Qt | NGL | GLSL |</h4>
 												<div class="year">2022</div>
 											</a>
 										</div>
@@ -195,6 +225,42 @@
 							</article>
 
 							<!-- Modals -->
+							<div id="mpmModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>Deformation Simulation</h2>
+										<h3>| C++ | Qt | NGL | GLSL |</h3>
+										<div class="video">
+											
+										</div>
+										<p>2D deformation simulation using MPM, implemented in C++ with NGL.</p>
+										<p>
+											<a href="https://github.com/rinafumoto/MPM" class="button">GitHub</a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="other/MPM.pdf" class="button">Report</a>
+										</p>
+										<div class="year">2022</div>
+									</div>
+								</div>
+							</div>
+							<div id="appModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>App Launcher</h2>
+										<h3>| Python | Qt | Bash |</h3>
+										<div class="video">
+											
+										</div>
+										<p>GUI based system to configure and launch apps on Linux systems.</p>
+										<p>
+											<a href="https://github.com/rinafumoto/AppLauncher" class="button">GitHub</a>
+										</p>
+										<div class="year">2022</div>
+									</div>
+								</div>
+							</div>
 							<div id="renderModal" class="bg">
 								<div class="modal">
 									<div class="modal-content">
@@ -214,12 +280,26 @@
 									</div>
 								</div>
 							</div>
+							<div id="slugModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>Slug Game</h2>
+										<h3>| Unreal Engine | Blueprints |</h3>
+										<div class="video">
+											
+										</div>
+										<p>NCCA Group Project. I worked on gameplay scripting.</p>
+										<div class="year">2022</div>
+									</div>
+								</div>
+							</div>
 							<div id="fluidModal" class="bg">
 								<div class="modal">
 									<div class="modal-content">
 										<span class="close-button">&times;</span>
 										<h2>Fluid Simulation</h2>
-										<h3>| C++ | Qt | OpenGL |</h3>
+										<h3>| C++ | Qt | NGL | GLSL |</h3>
 										<div class="video">
 											
 										</div>
@@ -601,16 +681,19 @@
 			<script src="assets/js/imagesloaded.pkgd.min.js"></script>
 			<script>
 				showreel = new Vimeo.Player($('#showreel iframe'));
-				renderIFrame = '<iframe src="https://player.vimeo.com/video/715569293?h=e410ffeb02&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				fluidIFrame = '<iframe src="https://player.vimeo.com/video/715568379?h=dce67b5fcf&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="924" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				crockeryIFrame = '<iframe src="https://player.vimeo.com/video/715567580?h=253115c3c1&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				hdaIFrame = '<iframe src="https://player.vimeo.com/video/715567109?h=12e473316b&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				dlaIFrame = '<iframe src="https://player.vimeo.com/video/715550509?h=fabd24f154&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				arIFrame = '<iframe src="https://player.vimeo.com/video/715542122?h=2c124e512a&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				staircaseIFrame = '<iframe src="https://player.vimeo.com/video/715566627?h=3ebf18376f&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				rbdnfluidIFrame = '<iframe src="https://player.vimeo.com/video/715566451?h=f093247685&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				rocketIFrame = '<iframe src="https://player.vimeo.com/video/715566088?h=c266e4f072&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="834" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-				brickIFrame = '<iframe src="https://player.vimeo.com/video/715565689?h=7047c48f2e&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				mpmIFrame = '<iframe src="https://player.vimeo.com/video/715569815?h=863ff5955f&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				appIFrame = '<iframe src="https://player.vimeo.com/video/715574596?h=4046556c51&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				renderIFrame = '<iframe src="https://player.vimeo.com/video/715569293?h=e410ffeb02&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				slugIFrame = '<iframe src="https://player.vimeo.com/video/715575756?h=d4e6bb8b9f&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				fluidIFrame = '<iframe src="https://player.vimeo.com/video/715568379?h=dce67b5fcf&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="924" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				crockeryIFrame = '<iframe src="https://player.vimeo.com/video/715567580?h=253115c3c1&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				hdaIFrame = '<iframe src="https://player.vimeo.com/video/715567109?h=12e473316b&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				dlaIFrame = '<iframe src="https://player.vimeo.com/video/715550509?h=fabd24f154&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				arIFrame = '<iframe src="https://player.vimeo.com/video/715542122?h=2c124e512a&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				staircaseIFrame = '<iframe src="https://player.vimeo.com/video/715566627?h=3ebf18376f&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				rbdnfluidIFrame = '<iframe src="https://player.vimeo.com/video/715566451?h=f093247685&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				rocketIFrame = '<iframe src="https://player.vimeo.com/video/715566088?h=c266e4f072&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="834" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+				brickIFrame = '<iframe src="https://player.vimeo.com/video/715565689?h=7047c48f2e&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
 
 				$('.grid-item > a').click(function() {
 					$("#" + $(this).attr("id") +"Modal").toggleClass("show-modal");
