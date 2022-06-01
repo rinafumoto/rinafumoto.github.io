@@ -2528,7 +2528,7 @@ input, select, textarea {
 		  }
 
 /* Loading Spinner */
-		  /* .lds-spinner,
+		  .lds-spinner,
 		  .lds-spinner div,
 		  .lds-spinner div:after {
 			box-sizing: border-box;
@@ -2619,4 +2619,4 @@ input, select, textarea {
 			100% {
 			  opacity: 0;
 			}
-		  } */
+		  }

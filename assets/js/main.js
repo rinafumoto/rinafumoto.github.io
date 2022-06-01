@@ -38,7 +38,7 @@
 				});
 				
 				$body.removeClass('is-preload');
-				// $('.lds-spinner').hide();
+				$('.lds-spinner').hide();
 			}, 100);
 		});
 
