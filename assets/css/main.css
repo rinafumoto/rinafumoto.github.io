@@ -1317,17 +1317,6 @@ input, select, textarea {
 		overflow-y: scroll;
 	}
 
-		/* body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		} */
-
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
@@ -2241,6 +2230,15 @@ input, select, textarea {
 			}
 		}
 
+		@media screen and (max-width: 620px) {
+			#technical .grid-sizer, #technical .grid-item {
+				width: 50%;
+			}
+			#technical .grid-item--width2 {
+				width: 100%;
+			}
+		}
+
 		@media screen and (max-width: 500px) {
 
 			.grid-sizer, #graphics .grid-sizer, .grid-item {
@@ -2252,9 +2250,15 @@ input, select, textarea {
 			}
 		}
 
+		@media screen and (max-width: 460px) {
+			#technical .grid-sizer, #technical .grid-item {
+				width: 100%;
+			}
+		}
+
 		@media screen and (max-width: 360px) {
 			
-			.grid-sizer, #graphics .grid-sizer, .grid-item  {
+			#graphics .grid-sizer, .grid-item  {
 				width: 100%;
 			}
 
