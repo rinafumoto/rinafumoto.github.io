@@ -67,11 +67,21 @@
 										<div class="grid-sizer"></div>
 										<div class="grid-item grid-item--width2">
 											<span class="image">
+												<img src="images/technical/crack.webp"/>
+											</span>
+											<a id="crack">
+												<h3>Crack Propagation Simulation</h3>
+												<h4>| Houdini | HDA | VEX | MPM | J-integral |</h4>
+												<div class="year">2022</div>
+											</a>
+										</div>
+										<div class="grid-item grid-item--width2">
+											<span class="image">
 												<img src="images/technical/mpm.webp"/>
 											</span>
 											<a id="mpm">
 												<h3>Deformation Simulation</h3>
-												<h4>| C++ | Qt | NGL | GLSL |</h4>
+												<h4>| C++ | Qt | NGL | GLSL | MPM |</h4>
 												<div class="year">2022</div>
 											</a>
 										</div>
@@ -220,6 +230,25 @@
 							</article>
 
 							<!-- Modals -->
+							<div id="crackModal" class="bg">
+								<div class="modal">
+									<div class="modal-content">
+										<span class="close-button">&times;</span>
+										<h2>Crack Propagation Simulation</h2>
+										<h3>| Houdini | HDA | VEX | MPM | J-integral |</h3>
+										<div class="video">
+											
+										</div>
+										<p>Houdini Digital Asset for crack propagation simulation using MPM and J-Integral.</p>
+										<p>
+											<a href="other/CrackPropagation.pdf" class="button">Thesis</a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="other/CrackSim.hdanc" download class="button">Download</a>
+										</p>
+										<div class="year">2022</div>
+									</div>
+								</div>
+							</div>
 							<div id="mpmModal" class="bg">
 								<div class="modal">
 									<div class="modal-content">
@@ -710,6 +739,7 @@
 			<script src="assets/js/masonry.pkgd.min.js"></script>
 			<script src="assets/js/imagesloaded.pkgd.min.js"></script>
 			<script>
+				crackIFrame = '<iframe src="https://player.vimeo.com/video/741716265?h=8f9b9356f2&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
 				mpmIFrame = '<iframe src="https://player.vimeo.com/video/715569815?h=863ff5955f&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
 				appIFrame = '<iframe src="https://player.vimeo.com/video/715574596?h=4046556c51&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
 				renderIFrame = '<iframe src="https://player.vimeo.com/video/715569293?h=e410ffeb02&loop=1&title=0&byline=0&portrait=0&muted=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
